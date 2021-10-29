@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    background-color: beige;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.dados{
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 56px;
+    margin-top: 1%;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+     
+  }
+  
+table,
+th,
+tr,
+td {
+  border: 1px solid black;
+   }
+

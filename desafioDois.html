@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>DesafioDois</title>
+
+</head>
+
+<body>
+
+  <h1>Bem Vindo ao Cotação de Seguros Online</h1>
+
+    <form class="dados">
+        <label>Digite seu Nome</label><br>
+        <input type="text" name="nome" id="nome"><br>
+        <label>Digite seu Cpf</label><br>
+        <input type="value" name="cpf" id="cpf"><br>
+        <label>Sexo</label><br>
+        <input type="radio" name="sexo" id="sexo">M<br>
+        <input type="radio" name="sexo" id="sexo">F<br>
+        <label>Data de Nascimento</label><br>
+        <input type="date" name="data" id="dataNascimento" min="1921-12-31" max="2003-12-31"><br>
+        <label>Nome do Veiculo</label><br>
+        <input type="text" name="nomeVeiculo" id="nomeVeiculo"><br>
+        <label>Valor do Veiculo</label><br>
+        <input type="value" name="valorVeiculo" id="valorVeiculo" min="1"><br>
+        <button onclick="cotacao()">Gerar Cotação</button>
+
+    </form>
+
+    <script>
+
+      function cotacao(){
+        localStorage.setItem("nome", document.querySelector("#nome").value);
+        localStorage.setItem("cpf", document.querySelector("#cpf").value);
+        localStorage.setItem("sexo", document.querySelector("#sexo").value);
+        localStorage.setItem("dataNascimento", document.querySelector("#dataNascimento").value);
+        localStorage.setItem("nomeVeiculo", document.querySelector("#nomeVeiculo").value);
+        localStorage.setItem("valorVeiculo", document.querySelector("#valorVeiculo").value);
+      };
+
+
+    </script>
+
+    <main class="cotacao">
+  
+  
+    <table>
+        
+          <tr>
+            <th>Quantidade de Parcelas</th>
+            <th>Valor Parcela</th>
+            <th>Valor Total</th>
+          </tr>
+
+          <tr><td>1x</td> <td>R$</td> <td>R$</td> </tr>
+   
+          <tr><td>2x</td> <td>R$</td> <td>R$</td> </tr>
+   
+          <tr><td>3x</td> <td>R$</td> <td>R$</td> </tr>
+
+          <tr><td>4x</td> <td>R$</td> <td>R$</td> </tr>
+   
+          <tr><td>5x</td> <td>R$</td> <td>R$</td> </tr>
+   
+          <tr><td>6x</td> <td>R$</td> <td>R$ (Acréscimo de 3%)</td> </tr>
+
+          <tr><td>7x</td> <td>R$</td> <td>R$ (Acréscimo de 3%)</td> </tr>
+   
+          <tr><td>8x</td> <td>R$</td> <td>R$ (Acréscimo de 3%)</td> </tr>
+   
+          <tr><td>9x</td> <td>R$</td> <td>R$  (Acréscimo de 3%)</td> </tr>
+
+          <tr><td>10x</td> <td>R$</td> <td>R$ (Acréscimo de 5%)</td> </tr>
+   
+          <tr><td>11x</td> <td>R$</td> <td>R$ (Acréscimo de 5%)</td> </tr>
+   
+          <tr><td>12x</td> <td>R$</td> <td>R$ (Acréscimo de 5%)</td> </tr>
+   
+   </table>
+                      
+    
+      
+
+     <button onclick="cotacao()">Gerar Nova Cotação</button> 
+
+     </main>
+    
+     
+
+
+
+</body>
+</html>
